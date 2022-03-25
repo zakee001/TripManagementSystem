@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/companySignUpBtn"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/company_sign_up"
+        app:layout_constraintStart_toEndOf="@+id/companyLoginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/adminLoginBtn"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/userSignUpBtn"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/user_sign_up"
+        app:layout_constraintStart_toEndOf="@+id/userLoginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/companySignUpBtn" />
+
+    <Button
+        android:id="@+id/adminLoginBtn"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="85dp"
+        android:text="@string/admin_login"
+        app:layout_constraintStart_toEndOf="@+id/adminLoginTxt"
+        app:layout_constraintTop_toBottomOf="@+id/companyNameTxt"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/companyLoginBtn"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/company_login"
+        app:layout_constraintStart_toEndOf="@+id/companyLoginTxt"
+        app:layout_constraintTop_toBottomOf="@+id/adminLoginBtn" />
+
+    <Button
+        android:id="@+id/userLoginBtn"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/user_login"
+        app:layout_constraintStart_toEndOf="@+id/userLoginTxt"
+        app:layout_constraintTop_toBottomOf="@+id/companyLoginBtn" />
+
+    <TextView
+        android:id="@+id/companyNameTxt"
+        android:layout_width="338dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/calistoga"
+        android:text="@string/trip_management_system"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="28sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".2" />
+
+    <TextView
+        android:id="@+id/userLoginTxt"
+        android:layout_width="140dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/calistoga"
+        android:text="@string/customer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="28sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyLoginTxt" />
+
+    <TextView
+        android:id="@+id/companyLoginTxt"
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/calistoga"
+        android:text="@string/company"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="28sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminLoginTxt" />
+
+    <TextView
+        android:id="@+id/adminLoginTxt"
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="85dp"
+        android:fontFamily="@font/calistoga"
+        android:text="@string/admin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="28sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyNameTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

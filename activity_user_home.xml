@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHome">
+
+    <TextView
+        android:id="@+id/searchTxt"
+        android:layout_width="354dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/search_txt"
+        android:textAlignment="center"
+        android:textColorHint="#78909C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AD1"
+        android:layout_width="158dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_launcher_background"
+        android:outlineProvider="bounds"
+        android:text="@string/ad1"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchTxt" />
+
+    <TextView
+        android:id="@+id/AD2"
+        android:layout_width="158dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/ic_launcher_background"
+        android:outlineProvider="bounds"
+        android:text="@string/ad2"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchTxt" />
+
+    <TextView
+        android:id="@+id/AD6"
+        android:layout_width="158dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/ic_launcher_background"
+        android:outlineProvider="bounds"
+        android:text="@string/ad4"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AD2" />
+
+    <TextView
+        android:id="@+id/AD3"
+        android:layout_width="158dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_launcher_background"
+        android:outlineProvider="bounds"
+        android:text="@string/ad3"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AD1" />
+
+    <TextView
+        android:id="@+id/AD5"
+        android:layout_width="158dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_launcher_background"
+        android:outlineProvider="bounds"
+        android:text="@string/ad5"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AD3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
